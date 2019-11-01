@@ -23,11 +23,11 @@ public class ApplicationManager {
 
     public void init(String browser) {
         if (browser.equals(BrowserType.CHROME)) {
-            driverPath = FilenameUtils.separatorsToSystem("src/test/resources/webdriver/linux/chromedriver");
+            driverPath = FilenameUtils.separatorsToSystem("webdriver/linux/chromedriver");
             System.setProperty("webdriver.chrome.driver", ApplicationManager.driverPath);
             driver = new ChromeDriver();
         } else if (browser.equals(BrowserType.FIREFOX)) {
-            driverPath = FilenameUtils.separatorsToSystem("src/test/resources/webdriver/linux//geckodriver");
+            driverPath = FilenameUtils.separatorsToSystem("webdriver/linux/geckodriver");
             System.setProperty("webdriver.gecko.driver", ApplicationManager.driverPath);
             driver = new FirefoxDriver();
         }
