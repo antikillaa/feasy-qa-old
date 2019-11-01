@@ -15,3 +15,8 @@ Feature: Is it Friday yet?
     Given I am on the Google search page
     When I search for "Cheese!"
     Then the page title should start with "cheese"
+
+  Scenario: Create testrail suit
+    Given Create a testrun
+    When I search for "Cheese!"
+    Then the page title should start with "cheese"

@@ -1,4 +1,4 @@
-package io.severex.qa.service.appmanager;
+package io.severex.qa.service.manager;
 
 import org.apache.commons.io.FilenameUtils;
 import org.openqa.selenium.WebDriver;

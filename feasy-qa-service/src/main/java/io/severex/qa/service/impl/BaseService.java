@@ -1,6 +1,6 @@
-package io.severex.qa.service.service;
+package io.severex.qa.service.impl;
 
-import io.severex.qa.service.appmanager.ApplicationManager;
+import io.severex.qa.service.manager.ApplicationManager;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.openqa.selenium.remote.BrowserType;
