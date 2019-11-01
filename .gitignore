@@ -1,0 +1,4 @@
+# Project exclude paths
+/feasy-qa-model/target/
+/feasy-qa-service/target/
+/feasy-qa-test/target/
