@@ -23,7 +23,8 @@ public class ApplicationManager {
 
     public void init(String browser) {
         if (browser.equals(BrowserType.CHROME)) {
-            driverPath = FilenameUtils.separatorsToSystem("webdriver/linux/chromedriver");
+//            driverPath = FilenameUtils.separatorsToSystem("webdriver/linux/chromedriver"); //linux
+            driverPath = FilenameUtils.separatorsToSystem("webdriver/win/chromedriver.exe"); //win
             System.setProperty("webdriver.chrome.driver", ApplicationManager.driverPath);
             driver = new ChromeDriver();
         } else if (browser.equals(BrowserType.FIREFOX)) {
@@ -35,11 +36,6 @@ public class ApplicationManager {
         driver.manage().timeouts().pageLoadTimeout(100, SECONDS);
         driver.manage().timeouts().setScriptTimeout(100, SECONDS);
 
-        if (env != null) {
-            driver.get("https://" + env + "grinfer.com/");
-        } else {
-            driver.get("https://grinfer.com/");
-        }
 
     }
 
